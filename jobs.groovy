@@ -24,7 +24,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
           shell("flocker-admin/venv/bin/py.test --junitxml results.xml flocker")
       }
       publishers {
-          archiveJunit('aws_ubuntu_trusty.xml') {
+          archiveJunit('results.xml') {
                retainLongStdout(true)
                testDataPublishers {
                     allowClaimingOfFailedTests()
