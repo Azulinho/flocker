@@ -103,7 +103,7 @@ branches.each {
   multiJob {
       steps {
           phase('parallel_tests', 'ALWAYS') {
-              phaseName 'parallel_tests'
+              phaseName('parallel_tests')
               job("${${dashProject}/${branchName}/aws_ubuntu_trusty_acceptance")
               job("${${dashProject}/${branchName}/aws_ubuntu_trusty_cli")
               job("${${dashProject}/${branchName}/aws_ubuntu_trusty_volume")
