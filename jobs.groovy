@@ -30,6 +30,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/acceptance
                   |""".stripMargin()
           )
@@ -68,6 +69,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/cli
                   |""".stripMargin()
           )
@@ -104,6 +106,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/volume
                   |""".stripMargin()
           )
@@ -140,6 +143,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/control
                   |""".stripMargin()
           )
@@ -176,6 +180,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/restapi
                   |""".stripMargin()
           )
@@ -212,6 +217,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/node
                   |""".stripMargin()
           )
@@ -248,6 +254,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/provision
                   |""".stripMargin()
           )
@@ -284,6 +291,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/route
                   |""".stripMargin()
           )
@@ -321,6 +329,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/test
                   |""".stripMargin()
           )
@@ -357,6 +366,7 @@ def aws_ubuntu_trusty(project, git_url, branch) {
                   | source flocker-admin/venv/bin/activate
                   | pip install .
                   | pip install Flocker[doc,dev,release]
+                    pip install pytest
                   | py.test --junitxml results.xml flocker/testtools
                   |""".stripMargin()
           )
